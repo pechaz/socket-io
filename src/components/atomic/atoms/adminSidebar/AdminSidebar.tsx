@@ -2,7 +2,7 @@ import { IAdminSidebarProps } from "./AdminSidebar.interface";
 
 const AdminSidebar = ({ ids, onClick }: IAdminSidebarProps) => {
   return (
-    <div className="min-w-[236px] max-w-[236px] h-full bg-white flex flex-col">
+    <div className="md:min-w-[236px] max-w-[236px] h-full bg-white flex flex-col">
       <div className="p-4">
         <span className="text-[20px] text-black font-normal">لیست کاربران</span>
       </div>

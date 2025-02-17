@@ -13,13 +13,13 @@ const WriteText = ({
 }: IWriteTextAdminProps) => {
   return (
     <div
-      className={`h-14 bg-white px-2 w-full flex items-center gap-2 bg-[##F5F5F5] border border-[#BBBBBB] rounded-xl ${
+      className={`py-2 sm:py-0 sm:h-14 bg-white px-2 w-full flex flex-col sm:flex-row items-center gap-2 bg-[##F5F5F5] border border-[#BBBBBB] rounded-xl ${
         className ?? ""
       }`}
     >
       <div className="w-full h-full flex items-stretch gap-2 ">
         <IconBookmark className={`${classes["icon"]} self-center`} />
-        <div className="min-h-full w-[1px] bg-[#BBBBBB]" />
+        <div className="hidden md:block min-h-full w-[1px] bg-[#BBBBBB]" />
         <input
           value={val}
           onChange={(e) => onValChanged(e.target.value)}
